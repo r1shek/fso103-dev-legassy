@@ -138,3 +138,17 @@
 // }
 
 // console.log(showMessage(userName, userAge));
+
+
+/*function minNumber(a, b, c, d, e) {
+    return Math.min(a, b, c, d, e);
+};
+console.log(minNumber(2, 45, -14, 23, 102));
+console.log(minNumber(24, 145, 414, 23, 2));
+console.log(minNumber(42, -45, -140, 123, 12));*/
+const password = prompt("Enter your password");
+function checkPassword(value) {
+    const userPassword = "admin";
+    return value === userPassword;
+};
+console.log(checkPassword(password));
