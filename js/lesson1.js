@@ -95,3 +95,46 @@
 // console.log(Number(num));
 // console.log(Number.parseFloat(normalizedString));
 // console.log(Number.parseInt(normalizedString));
+
+// const num = 12;
+// console.log(Math.pow(num, 2));
+// console.log(Math.sqrt(num).toFixed(1));
+
+// const float = 20.6;
+// console.log(Math.floor(float));
+// console.log(Math.ceil(float));
+// console.log(Math.round(float));
+
+// console.log(Math.min(1, 5, 7, 4));
+
+// const num = 34;
+// console.log(String(num));
+
+// const strA = "Hello";
+// const strB = "World";
+
+// console.log(strA.length);
+// console.log(strA[0]);
+// console.log(strA.indexOf("o"));
+// console.log(strA.includes("e"));
+// console.log(strA.toLowerCase());
+// console.log(strA.slice(3));
+
+// console.log(strA + " " + strB);
+
+// const firstName = "Kiwi";
+// const age = 45;
+// const message = "Hello " + firstName + "," + " " + "your age is " + age;
+// console.log(message);
+
+// const normalizedMessage = `Hello ${firstName}, your age is ${age}`;
+// console.log(normalizedMessage);
+
+// const userName = prompt("Enter your name");
+// const userAge = prompt("Enter your age");
+
+// function showMessage(name, age) {
+//   return `Hello ${name}, your age is ${age}`;
+// }
+
+// console.log(showMessage(userName, userAge));
