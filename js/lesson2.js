@@ -165,7 +165,7 @@ console.log(sumArray(someArr));
 //TODO:=============task-3=================
 // Написати функцію, яка приймає рядок і повертає кількість голосних літер у цьому рядку. `Містить ${count} голосних`
 
- /* const str = "This is a new line";
+/* const str = "This is a new line";
  
 function countVowels(str) {
      let count = 0;
@@ -182,4 +182,15 @@ function countVowels(str) {
 
 console.log(countVowels(str)); */
 
+//TODO:=========task-5=================
+// Перевірити, чи містить масив заданий елемент. Якщо містить, видалити його, якщо ні - додати в кінець масиву.
 
+// const wordsArray = ['JavaScript', 'HTML', 'CSS'];
+
+// function updArray(array, item) {
+//   const index = array.indexOf(item);
+
+//   index === -1 ? wordsArray.push(item) : wordsArray.splice(index, 1);
+//   return wordsArray;
+// }
+// console.log(updArray(wordsArray, 'React'));
