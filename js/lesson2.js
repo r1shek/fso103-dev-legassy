@@ -97,3 +97,89 @@
 // while (num < 100) {
 //   num = Number.parseFloat(prompt('Input number over 100'));
 // }
+
+//TODO: 6 ===================================
+// Знайдіть число 49  у проміжку чисел від 1 до 100 та вийдіть з циклу.
+
+/* for (let index = 1; index <= 100; index++) {
+    if (index === 49) {
+        console.log(index); 
+        break;
+    }
+   console.log(index);
+}; */
+
+/* for (let index = 1; index <= 100; index++) {
+    console.log(index);
+    if (index !== 49) {
+       
+        continue;
+    } else {
+        console.log(index);
+    }   
+};*/
+
+// ! Масиви і функції
+//TODO:=========task-01=================
+// Створіть масив styles з елементами «Джаз» та «Блюз».
+// Додайте "Рок-н-рол" в кінець.
+// Замініть значення "Блюз" на "Класика".
+// Видалить перший елемент масиву і виведіть його в консоль.
+// Вставте «Реп» і «Реггі» на початок масиву.
+
+/* const styles = ['Джаз', 'Блюз'];
+console.log(styles);
+
+styles.push('Рок-н-рол');
+console.log(styles);
+
+/* for (let i = 0; i < styles.length; i += 1) {
+    if (styles[i] === 'Блюз') {
+        styles[i] = "Класика";
+    }
+};*/
+/* styles.unshift('rep'); */
+/*const index = styles.indexOf('Блюз');
+styles[index] = 'Класика';
+console.log(styles); 
+
+const firstElement = styles.shift();
+console.log(firstElement);
+console.log(styles); */
+
+//TODO:=============task-02=================
+// напиши функцію яка сумуватиме сусідні числа і пушити в новий масив
+
+/* const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
+
+function sumArray(array) {
+    const newArray = [];
+    for (let i = 0; i < array.length - 1; i++) {
+        newArray.push(array[i] + array[i + 1]);
+    }
+    return newArray;
+};
+console.log(sumArray(someArr));
+ */
+
+//TODO:=============task-3=================
+// Написати функцію, яка приймає рядок і повертає кількість голосних літер у цьому рядку. `Містить ${count} голосних`
+
+ /* const str = "This is a new line";
+ 
+function countVowels(str) {
+     let count = 0;
+    const vowels = ["a", "e", "i", "o", "u"];
+     for (let index = 0; index < str.length; index++) {
+         const letter = str[index];
+         if (vowels.includes(letter)) {
+             count += 1;
+         }
+        
+    }
+    return `Містить ${count} голосних`;
+};
+
+console.log(countVowels(str)); */
+
+
