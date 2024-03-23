@@ -175,94 +175,126 @@ console.log(market.hasProduct('tomato')); */
 // const res = getNewArray(numbers);
 // console.log(res);
 
+/* const numbers = [1, 2, 3, 4, 5];
+const res = numbers.map(item => item ** 2);
+console.log(res);
+ */
 //TODO:=========task-02=================
 // Дано масив об'єктів {id: 1, values: [1, 2, 3]}, {id: 2, values: [4, 5, 6]}, {id: 3, values: [7, 8, 9]}. Створіть новий масив, що містить всі значення з масивів values кожного об'єкту, збережених в одному масиві. Очікуваний результат: [1, 2, 3, 4, 5, 6, 7, 8, 9].
 
-// const data = [
-//   { id: 1, values: [1, 2, 3] },
-//   { id: 2, values: [4, 5, 6] },
-//   { id: 3, values: [7, 8, 9] },
-// ];
+ /* const data = [
+   { id: 1, values: [1, 2, 3] },
+   { id: 2, values: [4, 5, 6] },
+   { id: 3, values: [7, 8, 9] },
+ ];
 
-// const res = flatArray(data);
-// console.log(res);
-
+const res = data.flatMap(item => item.values);
+console.log(res);
+ */
 //TODO:=========task-03=================
 // Дано масив об'єктів {name: "John", age: 27}, {name: "Jane", age: 31}, {name: "Bob", age: 19}. Перевірте, чи є хоча б один об'єкт з віком менше 20 років. Очікуваний результат: true.
 
-// const people = [
-//   { name: "John", age: 27 },
-//   { name: "Jane", age: 31 },
-//   { name: "Bob", age: 19 },
-// ];
+ /* const people = [
+   { name: "John", age: 27 },
+   { name: "Jane", age: 31 },
+   { name: "Bob", age: 21 },
+ ];
 
-// const res = checkAge(people);
-// console.log(res);
+const res = people.some(item => item.age < 20);
+console.log(res); */
 
 //TODO:=========task-04=================
 //  Дано масив чисел [2, 4, 6, 8, 10]. Перевірте, чи є кожен елемент масиву парним. Очікуваний результат: true.
 
-// const numbers = [2, 4, 6, 8, 10];
+/* const numbers = [2, 4, 6, 8, 10];
 
-// const res = checkEvenArray(numbers);
-// console.log(res);
+const res = numbers.every(number => number % 2 === 0);
+console.log(res); */
 
 //TODO:=========task-05=================
 // Дано масив чисел [1, 2, 3, 4, 5]. Знайдіть перший елемент, більший за 3. Очікуваний результат: 4.
-
-// const res = getNumber(numbers);
-// console.log(res);
-
+/* const numbers = [1, 2, 3, 4, 5];
+const res = numbers.find(element => element > 3);
+console.log(res);
+ */
 //TODO:=========task-06=================
 // Відсортуйте масив чисел [4, 2, 5, 1, 3] у порядку зростання. Очікуваний результат: [1, 2, 3, 4, 5].
-
-// const res = sortedArray(numbersArray);
-// console.log(res);
-
+/* const numbers = [4, 2, 5, 1, 3];
+const res = numbers.toSorted((a, b) => b - a);
+console.log(res);
+ */
 //TODO:===============task-07===============================
 // Відсортуйте масив рядків ["banana", "orange", "apple", "pear"] у порядку алфавіту. Очікуваний результат: ["apple", "banana", "orange", "pear"].
 
-// const stringArray = ["banana", "orange", "apple", "pear"];
+/* const stringArray = ["banana", "orange", "apple", "pear"];
 
-// const res = sortedArray(stringArray);
-// console.log(res);
+const res = stringArray.toSorted((first, second) => first.localeCompare(second));
+console.log(res); */
 
 //TODO:===============task-8===============================
 //  Відсортуйте масив об'єктів {name: "John", age: 27}, {name: "Jane", age: 31}, {name: "Bob", age: 19} за віком у порядку зростання. Очікуваний результат: [{name: "Bob", age: 19}, {name: "John", age: 27}, {name: "Jane", age: 31}].
 
-// const users = [
-//   { name: 'John', age: 27 },
-//   { name: 'Jane', age: 31 },
-//   { name: 'Bob', age: 19 },
-// ];
+/* const users = [
+   { name: 'John', age: 27 },
+   { name: 'Jane', age: 31 },
+   { name: 'Bob', age: 19 },
+ ];
 
-// const res = ageSortedUsers(users);
-// console.log(res);
-
+const res = users.toSorted((a, b) => a.age - b.age);
+console.log(res);
+ */
 //TODO:=========task-09=================
 // Дано масив об'єктів {name: "John", age: 27}, {name: "Jane", age: 31}, {name: "Bob", age: 19}. Створіть новий масив, що містить тільки об'єкти, в яких вік більше 20 років. Очікуваний результат: [{name: "John", age: 27}, {name: "Jane", age: 31}]
 
-// const users = [
-// { name: "John", age: 27 },
-// { name: "Jane", age: 31 },
-// { name: "Bob", age: 19 },
-// ];
+ /* const users = [
+ { name: "John", age: 27 },
+ { name: "Jane", age: 31 },
+ { name: "Bob", age: 19 },
+ ];
 
-// const res = getAge(users);
-// console.log(res);
+const res = users.filter(item => item.age > 20);
+ console.log(res); */
 
 //TODO:=========task-10=================
 // Дано масив чисел [1, 2, 3, 4, 5]. Застосуйте метод reduce для обчислення суми елементів масиву
 
-//const numbers = [1, 2, 3, 4, 5];
+/* const numbers = [1, 2, 3, 4, 5];
 
-//const res = totalSum(numbers);
-//console.log(res);
+const res = numbers.reduce((acc, item) => acc + item, 0);
+console.log(res); */
 
 //TODO:=========task-11=================
 // У вас є масив чисел, і вам потрібно знайти середнє значення цих чисел. Напишіть функцію, яка приймає масив чисел і повертає середнє значення.
 
-//const arr = [1, 2, 3, 4, 5];
+/* const arr = [1, 2, 3, 4, 5];
 
-//const res = averageValue(arr);
-//console.log(res);
+const res = arr.reduce((acc, num, _, array) => acc + num / array.length, 0);
+console.log(res); */
+
+/* const students = [
+   { name: "Андрій", surname: "Іванов", grade: 4.5 },
+   { name: "Олександр", surname: "Петров", grade: 3.9 },
+   { name: "Марія", surname: "Сидорова", grade: 4.8 },
+   { name: "Ірина", surname: "Федорова", grade: 4.2 },
+];
+
+const res = students
+    .toSorted((a, b) => a.grade - b.grade)
+    .map(item => item.name)
+    .toSorted((a, b) => b.localeCompare(a))
+    .some(item => item === 'Марія');
+
+console.log(res); */
+
+//Напишіть функцію, яка приймає два числа і колбек-функцію. Функція повинна помножити числа між собою та передати результат дії до колбек-функції.
+// Колбек - функція повинна, у разі, якщо, це число є парним - помножити це число на себе, якщо ні - взяти квадратний корінь з цього числа, та вивести результат у консоль лог.
+
+/* function performOperation(a, b, callback) {
+    return callback(a * b);
+};
+
+function callbackFunction(number) {
+    return number % 2 === 0 ? Math.pow(number, 2) : Math.sqrt(number);
+}
+
+console.log(performOperation(5, 5, callbackFunction)); */
