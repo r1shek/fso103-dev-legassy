@@ -94,8 +94,13 @@ console.log(market.hasProduct('tomato')); */
 //   car: "Mercedes",
 //   carColor: "black",
 // };
+// console.log(Object.keys(obj)) ;
+// function getBool (obj, key) {
+//     const keysArrey = Object.keys(obj)
+//     return keysArrey.includes(key)
+// }
+// console.log(getBool(obj, "car")); // true
 
-// console.log(getBool(obj, "user")); // true
 
 //TODO:============task-06======================================================
 // У нас є об'єкт, у якому зберігатимуться зарплати
