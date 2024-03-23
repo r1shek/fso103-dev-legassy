@@ -6,11 +6,60 @@
 // 1 додати поле mood зі значенням 'happy'
 // 2 замінити hobby на 'skydiving'
 
+/*const user = {
+    name: 'Igor',
+    hobby: 'tennis',
+    age: 25,
+    greet() {
+        return `Hallo ${this.name}`;
+    }
+};
+ console.log(user.name);
+console.log(user['name']); 
+const user1 = Object.create(user);
+user1.name = 'Anna';
+console.log(user1.greet());
+console.log(user.greet());
+user.mood = 'happy';
+console.log(user);
+user.name = 'Sergiy';
+console.log(user);*/
+
+
+
+
 //TODO:============task-02==============================================
 // Створіть об'єкт "прямокутник" з властивостями "довжина" та "ширина". Напишіть метод "calculateArea", який буде обчислювати площу прямокутника на основі його довжини та ширини.
+/* const square = {
+  width: 100,
+  height: 150,
+    calculateArea() {
+        return this.width * this.height;
+  }
+};
+
+console.log(square.calculateArea()); */
+
+
 
 //TODO:============task-03==============================================
 // Створіть об'єкт "магазин" зі списком товарів. Напишіть метод "hasProduct", який буде перевіряти, чи є певний товар в наявності на складі магазину.
+/* const market = {
+    items: [],
+    hasProduct(productName) {
+        return this.items.includes(productName);
+    },
+    addProduct(product) {
+        this.items.push(product)
+    }
+};
+
+console.log(market.addProduct('milk'));
+console.log(market.addProduct('beer'));
+console.log(market.addProduct('apple'));
+console.log(market.items);
+
+console.log(market.hasProduct('tomato')); */
 
 //TODO:============task-04==============================================
 // 4. Створіть об'єкт "кошик" зі списком товарів та їх цін. Напишіть метод "calculateTotal", який буде обчислювати загальну суму товарів у кошику.
