@@ -25,9 +25,6 @@ console.log(user);
 user.name = 'Sergiy';
 console.log(user);*/
 
-
-
-
 //TODO:============task-02==============================================
 // Створіть об'єкт "прямокутник" з властивостями "довжина" та "ширина". Напишіть метод "calculateArea", який буде обчислювати площу прямокутника на основі його довжини та ширини.
 /* const square = {
@@ -39,8 +36,6 @@ console.log(user);*/
 };
 
 console.log(square.calculateArea()); */
-
-
 
 //TODO:============task-03==============================================
 // Створіть об'єкт "магазин" зі списком товарів. Напишіть метод "hasProduct", який буде перевіряти, чи є певний товар в наявності на складі магазину.
@@ -81,7 +76,7 @@ console.log(market.hasProduct('tomato')); */
 // card.addProduct ("phone", 7000)
 // card.addProduct("playStation", 15000)
 
-// console.log(card.calculateTotal ()); 
+// console.log(card.calculateTotal ());
 
 //! Перебір об'єктів: for...in і методи Object.keys|values|entries
 //TODO:============task-05======================================================
@@ -101,7 +96,6 @@ console.log(market.hasProduct('tomato')); */
 // }
 // console.log(getBool(obj, "car")); // true
 
-
 //TODO:============task-06======================================================
 // У нас є об'єкт, у якому зберігатимуться зарплати
 // нашої команди
@@ -114,7 +108,15 @@ console.log(market.hasProduct('tomato')); */
 //   Poly: 160,
 //   Ajax: 1470,
 // };
-
+// function totalSalary(obj) {
+//   let sum = 0;
+//   const valuesArray = Object.values(obj);
+//   for (const salary of valuesArray) {
+//     sum += salary;
+//   }
+//   return sum;
+// }
+// console.log(totalSalary(salaries));
 //TODO:============task-07======================================================
 // Створіть функцію multiplyNumeric(obj),
 // яка множить всі числові властивості об'єкта obj на 2.
