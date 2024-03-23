@@ -63,6 +63,25 @@ console.log(market.hasProduct('tomato')); */
 
 //TODO:============task-04==============================================
 // 4. Створіть об'єкт "кошик" зі списком товарів та їх цін. Напишіть метод "calculateTotal", який буде обчислювати загальну суму товарів у кошику.
+// const card = {
+//     goods: [],
+//     price: [],
+//     calculateTotal() {
+//         let totalSum = 0;
+//         for (const number of this.price) {
+//             totalSum += number;
+//         }
+//         return totalSum;
+//     },
+//     addProduct(productName, price) {
+//         this.price.push(price)
+//         this.goods.push(productName)
+//     }
+// }
+// card.addProduct ("phone", 7000)
+// card.addProduct("playStation", 15000)
+
+// console.log(card.calculateTotal ()); 
 
 //! Перебір об'єктів: for...in і методи Object.keys|values|entries
 //TODO:============task-05======================================================
