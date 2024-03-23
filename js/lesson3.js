@@ -127,6 +127,14 @@ console.log(market.hasProduct('tomato')); */
 //   height: 300,
 //   title: "My menu",
 // };
+// function multiplyNumeric(obj) {
+//   for (const key in obj) {
+//     if (obj.hasOwnProperty(key) && typeof obj[key] === "number") {
+//       obj[key] *= 2;
+//     }
+//   }
+//   return obj;
+// }
 
 // console.log(multiplyNumeric(menu));
 
@@ -142,13 +150,23 @@ console.log(market.hasProduct('tomato')); */
 // Створіть масив об'єктів "студентів" з властивостями "ім'я", "прізвище" та "середній бал".
 // Напишіть функцію "findTopStudent", яка буде повертати об'єкт студента з найвищим середнім балом.
 
-// const students = [
-//   { name: "Андрій", surname: "Іванов", grade: 4.5 },
-//   { name: "Олександр", surname: "Петров", grade: 3.9 },
-//   { name: "Марія", surname: "Сидорова", grade: 4.8 },
-//   { name: "Ірина", surname: "Федорова", grade: 4.2 },
-// ];
+const students = [
+  { name: "Андрій", surname: "Іванов", grade: 4.5 },
+  { name: "Олександр", surname: "Петров", grade: 3.9 },
+  { name: "Марія", surname: "Сидорова", grade: 4.8 },
+  { name: "Ірина", surname: "Федорова", grade: 4.2 },
+];
 
+function findTopStudent(array) {
+  let topStudent = array[0];
+  for (const student of array) {
+    if (topStudent.grade < student.grade) {
+      topStudent = student;
+    }
+  }
+  return topStudent;
+}
+console.log(findTopStudent(students));
 //! Callback
 //TODO:============task-01=========================
 // Напишіть функцію, яка приймає два числа і колбек-функцію. Функція повинна помножити числа між собою та передати результат дії до колбек-функції.
