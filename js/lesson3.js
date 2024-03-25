@@ -84,17 +84,17 @@ console.log(market.hasProduct('tomato')); */
 // Якщо об'єкт має такий ключ - поверне true
 // Є 2 варіанти рішення, спочатку напишемо функцію, потім вирішимо простим способом
 
-// const obj = {
-//   name: "Igor",
-//   car: "Mercedes",
-//   carColor: "black",
-// };
-// console.log(Object.keys(obj)) ;
-// function getBool (obj, key) {
-//     const keysArrey = Object.keys(obj)
-//     return keysArrey.includes(key)
-// }
-// console.log(getBool(obj, "car")); // true
+const obj = {
+  name: "Igor",
+  car: "Mercedes",
+  carColor: "black",
+};
+console.log(Object.keys(obj));
+function getBool(obj, key) {
+  const keysArray = Object.keys(obj);
+  return keysArray.includes(key);
+}
+console.log(getBool(obj, "car")); // true
 
 //TODO:============task-06======================================================
 // У нас є об'єкт, у якому зберігатимуться зарплати
@@ -182,7 +182,7 @@ console.log(res);
 //TODO:=========task-02=================
 // Дано масив об'єктів {id: 1, values: [1, 2, 3]}, {id: 2, values: [4, 5, 6]}, {id: 3, values: [7, 8, 9]}. Створіть новий масив, що містить всі значення з масивів values кожного об'єкту, збережених в одному масиві. Очікуваний результат: [1, 2, 3, 4, 5, 6, 7, 8, 9].
 
- /* const data = [
+/* const data = [
    { id: 1, values: [1, 2, 3] },
    { id: 2, values: [4, 5, 6] },
    { id: 3, values: [7, 8, 9] },
@@ -194,7 +194,7 @@ console.log(res);
 //TODO:=========task-03=================
 // Дано масив об'єктів {name: "John", age: 27}, {name: "Jane", age: 31}, {name: "Bob", age: 19}. Перевірте, чи є хоча б один об'єкт з віком менше 20 років. Очікуваний результат: true.
 
- /* const people = [
+/* const people = [
    { name: "John", age: 27 },
    { name: "Jane", age: 31 },
    { name: "Bob", age: 21 },
@@ -246,7 +246,7 @@ console.log(res);
 //TODO:=========task-09=================
 // Дано масив об'єктів {name: "John", age: 27}, {name: "Jane", age: 31}, {name: "Bob", age: 19}. Створіть новий масив, що містить тільки об'єкти, в яких вік більше 20 років. Очікуваний результат: [{name: "John", age: 27}, {name: "Jane", age: 31}]
 
- /* const users = [
+/* const users = [
  { name: "John", age: 27 },
  { name: "Jane", age: 31 },
  { name: "Bob", age: 19 },
