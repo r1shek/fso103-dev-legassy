@@ -83,3 +83,9 @@ img {
 .panel.active {
   display: block;
 }
+.succes {
+  outline: 3px solid green;
+}
+.error {
+  outline: 3px solid red;
+}
